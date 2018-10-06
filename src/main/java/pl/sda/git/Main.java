@@ -7,13 +7,12 @@ import java.util.*;
 
 public class Main {
 
-
     private static final Map<String, Action> possibleActions = new HashMap<>();
 
 
     static {
         possibleActions.put("concat", new ConcatAction());
-        possibleActions.put("jp-sort-alpha", new SortAlphaAction());
+        possibleActions.put("as-alpha-sort", new SortAlphaAction());
     }
 
     public static void main(String[] args) {
