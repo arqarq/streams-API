@@ -2,6 +2,7 @@ package pl.sda.git;
 
 import pl.sda.git.impl.ConcatAction;
 import pl.sda.git.impl.SortAlphaAction;
+import pl.sda.git.impl.InvStringAction;
 
 import java.util.*;
 
@@ -11,6 +12,7 @@ public class Main {
     static {
         possibleActions.put("concat", new ConcatAction());
         possibleActions.put("as-alpha-sort", new SortAlphaAction());
+        possibleActions.put("as-inv-string", new InvStringAction());
     }
 
     public static void main(String[] args) {
