@@ -1,6 +1,7 @@
 package pl.sda.git;
 
 import pl.sda.git.impl.ConcatAction;
+import pl.sda.git.impl.SortAlphaAction;
 
 import java.util.*;
 
@@ -11,6 +12,7 @@ public class Main {
 
     static {
         possibleActions.put("concat", new ConcatAction());
+        possibleActions.put("jp-sort-alpha", new SortAlphaAction());
     }
 
     public static void main(String[] args) {
