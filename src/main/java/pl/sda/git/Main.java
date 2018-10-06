@@ -6,9 +6,7 @@ import pl.sda.git.impl.SortAlphaAction;
 import java.util.*;
 
 public class Main {
-
     private static final Map<String, Action> possibleActions = new HashMap<>();
-
 
     static {
         possibleActions.put("concat", new ConcatAction());
