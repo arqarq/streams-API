@@ -7,6 +7,7 @@ import java.util.*;
 
 public class Main {
 
+
     private static final Map<String, Action> possibleActions = new HashMap<>();
 
 
