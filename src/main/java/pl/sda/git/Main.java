@@ -1,8 +1,8 @@
 package pl.sda.git;
 
 import pl.sda.git.impl.ConcatAction;
-import pl.sda.git.impl.SortAlphaAction;
 import pl.sda.git.impl.InvStringAction;
+import pl.sda.git.impl.SortAlphaAction;
 
 import java.util.*;
 
@@ -27,12 +27,16 @@ public class Main {
         System.out.println("Which action do you want to perform?");
         final String actionName = scanner.nextLine();
 
-        System.out.println("What are the arguments?");
-        final String argumentLine = scanner.nextLine();
-        final List<String> arguments = Arrays.asList(argumentLine.split(" "));
+        if (possibleActions.containsKey(actionName)) {
+            System.out.println("What are the arguments?");
+            final String argumentLine = scanner.nextLine();
+            final List<String> arguments = Arrays.asList(argumentLine.split(" "));
 
-        final Action action = possibleActions.get(actionName);
-        final String result = action.doIt(arguments);
-        System.out.println(result);
+            final Action action = possibleActions.get(actionName);
+            final String result = action.doIt(arguments);
+            System.out.println(result);
+        } else {
+            System.out.println("Podano nieprawidłową akcję!");
+        }
     }
 }
