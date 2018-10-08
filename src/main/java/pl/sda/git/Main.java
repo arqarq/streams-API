@@ -1,5 +1,6 @@
 package pl.sda.git;
 
+import pl.sda.git.impl.AddNumArgsAction;
 import pl.sda.git.impl.ConcatAction;
 import pl.sda.git.impl.InvStringAction;
 import pl.sda.git.impl.SortAlphaAction;
@@ -13,6 +14,7 @@ public class Main {
         possibleActions.put("concat", new ConcatAction());
         possibleActions.put("as-alpha-sort", new SortAlphaAction());
         possibleActions.put("as-inv-string", new InvStringAction());
+        possibleActions.put("as-add-num_args", new AddNumArgsAction());
     }
 
     public static void main(String[] args) {
