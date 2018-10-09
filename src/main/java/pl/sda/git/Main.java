@@ -32,8 +32,7 @@ public class Main {
         if (possibleActions.containsKey(actionName)) {
             System.out.println("What are the arguments?");
             final String argumentLine = scanner.nextLine();
-            final List<String> arguments = Arrays.asList(argumentLine.split(" "));
-
+            final List<String> arguments = Arrays.asList(argumentLine.trim().split("\\s+")); // split po jednej lub wielu spacjach
             final Action action = possibleActions.get(actionName);
             final String result = action.doIt(arguments);
             System.out.println(result);
