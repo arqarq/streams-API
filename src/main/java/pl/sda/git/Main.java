@@ -1,9 +1,9 @@
 package pl.sda.git;
 
-import pl.sda.git.impl.AddNumArgsAction;
+import pl.sda.git.impl.AddNumArgsActionAS;
 import pl.sda.git.impl.ConcatAction;
-import pl.sda.git.impl.InvStringAction;
-import pl.sda.git.impl.SortAlphaAction;
+import pl.sda.git.impl.InvStringActionAS;
+import pl.sda.git.impl.SortAlphaActionAS;
 
 import java.util.*;
 
@@ -12,9 +12,9 @@ public class Main {
 
     static {
         possibleActions.put("concat", new ConcatAction());
-        possibleActions.put("as-alpha-sort", new SortAlphaAction());
-        possibleActions.put("as-inv-string", new InvStringAction());
-        possibleActions.put("as-add-num_args", new AddNumArgsAction());
+        possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
+        possibleActions.put("as-inv-string", new InvStringActionAS());
+        possibleActions.put("as-add-num_args", new AddNumArgsActionAS());
     }
 
     public static void main(String[] args) {

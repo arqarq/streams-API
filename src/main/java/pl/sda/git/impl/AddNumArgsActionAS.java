@@ -4,7 +4,7 @@ import pl.sda.git.Action;
 
 import java.util.List;
 
-public class AddNumArgsAction implements Action {
+public class AddNumArgsActionAS implements Action {
     public String doIt(List<String> strings) {
         long sum = strings.stream()
                 .filter(x -> x.chars().allMatch(Character::isDigit))

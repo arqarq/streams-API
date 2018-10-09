@@ -5,7 +5,7 @@ import pl.sda.git.Action;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SortAlphaAction implements Action {
+public class SortAlphaActionAS implements Action {
     public String doIt(List<String> strings) {
         return strings.stream()
                 .sorted()
