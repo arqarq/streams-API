@@ -1,9 +1,6 @@
 package pl.sda.git;
 
-import pl.sda.git.impl.AddNumArgsActionAS;
-import pl.sda.git.impl.ConcatAction;
-import pl.sda.git.impl.InvStringActionAS;
-import pl.sda.git.impl.SortAlphaActionAS;
+import pl.sda.git.impl.*;
 
 import java.util.*;
 
@@ -15,12 +12,13 @@ public class Main {
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
         possibleActions.put("as-add-num_args", new AddNumArgsActionAS());
+        possibleActions.put("as-replace-b", new ReplaceBtoAbcAS());
     }
 
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Possible actions: ");
+        System.out.println("Possible actions:");
         possibleActions.entrySet().stream()
                 .map(Map.Entry::getKey)
                 .map(name -> "\t" + name)

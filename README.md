@@ -4,7 +4,7 @@
 3. Lista akcji do zaimplementowania, ich wynik wyswietli:
 * sortuj alfabetycznie
 * dodaj wszystkie argumenty, ktore sa cyframi (jesli jakis to litera nie bierz go pod uwage)
-- zamien we wszystkich elementach wszystkie wystapienia b na abc
+* zamien we wszystkich elementach wszystkie wystapienia b na abc
 - jesli zostalo podanych wiecej niz 10 argumentow dodaj je, jesli mniej pomnoz (wszystkie przez siebie) (jesli jakis argument to litera nie bierz go pod uwage)
 - dodaj do wszystkich argumentow slowo "java"
 - jesli element ma wiecej niz 3 litery skroc go do 3 liter
