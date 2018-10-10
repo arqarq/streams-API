@@ -10,6 +10,7 @@ public class Main {
     static {
         possibleActions.put("concat", new ConcatAction());
         possibleActions.put("as-add-if-10", new AddIfTenActionAS());
+        possibleActions.put("as-add-java", new AddJavaActionAS());
         possibleActions.put("as-add-num-args", new AddNumArgsActionAS());
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
