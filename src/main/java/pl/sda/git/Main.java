@@ -15,7 +15,8 @@ public class Main {
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
         possibleActions.put("as-cut3", new Cut3ActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
-        possibleActions.put("as-replace-b", new ReplaceBtoAbcAS());
+        possibleActions.put("as-replace-b", new ReplaceBtoAbcActionAS());
+        possibleActions.put("as-show-time-date", new ShowTimeOrDateActionAS());
     }
 
     public static void main(String[] args) {
