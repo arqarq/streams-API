@@ -13,6 +13,7 @@ public class Main {
         possibleActions.put("as-add-java", new AddJavaActionAS());
         possibleActions.put("as-add-num-args", new AddNumArgsActionAS());
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
+        possibleActions.put("as-cut3", new Cut3ActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
         possibleActions.put("as-replace-b", new ReplaceBtoAbcAS());
     }
@@ -33,6 +34,7 @@ public class Main {
             System.out.println("What are the arguments?");
             final String argumentLine = scanner.nextLine();
             final List<String> arguments = Arrays.asList(argumentLine.trim().split("\\s+")); // split po jednej lub wielu spacjach
+
             final Action action = possibleActions.get(actionName);
             final String result = action.doIt(arguments);
             System.out.println(result);
