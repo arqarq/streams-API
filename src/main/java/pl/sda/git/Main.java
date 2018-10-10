@@ -5,13 +5,14 @@ import pl.sda.git.impl.*;
 import java.util.*;
 
 public class Main {
-    private static final Map<String, Action> possibleActions = new HashMap<>();
+    private static final Map<String, Action> possibleActions = new LinkedHashMap<>();
 
     static {
         possibleActions.put("concat", new ConcatAction());
+        possibleActions.put("as-add-if-10", new AddIfTenActionAS());
+        possibleActions.put("as-add-num-args", new AddNumArgsActionAS());
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
-        possibleActions.put("as-add-num_args", new AddNumArgsActionAS());
         possibleActions.put("as-replace-b", new ReplaceBtoAbcAS());
     }
 
