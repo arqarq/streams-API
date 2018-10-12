@@ -17,6 +17,7 @@ public class Main {
         possibleActions.put("as-cut3", new Cut3ActionAS());
         possibleActions.put("as-exception", new ExceptionIf4ActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
+        possibleActions.put("as-length-yesno", new LengthYesNoActionAS());
         possibleActions.put("as-replace-b", new ReplaceBtoAbcActionAS());
         possibleActions.put("as-show-kot-only", new ShowKotActionAS());
         possibleActions.put("as-show-time-date", new ShowTimeOrDateActionAS());
