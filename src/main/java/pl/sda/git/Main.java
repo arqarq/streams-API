@@ -14,6 +14,7 @@ public class Main {
         possibleActions.put("as-add-java", new AddJavaActionAS());
         possibleActions.put("as-add-num-args", new AddNumArgsActionAS());
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
+        possibleActions.put("as-check-ko", new CheckKOActionAS());
         possibleActions.put("as-count-a", new ShowACountActionAS());
         possibleActions.put("as-cut3", new Cut3ActionAS());
         possibleActions.put("as-exception", new ExceptionIf4ActionAS());
