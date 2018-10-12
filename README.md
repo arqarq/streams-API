@@ -10,7 +10,7 @@
 * jesli element ma wiecej niz 3 litery skroc go do 3 liter
 * wyswietl aktualna godzine jesli jest wiecej niz 5 argumentow, jesli mniej dzisiejsza data
 * wyrzuć wyjatek jesli jest wiecej niz 3 argumentow, jesli mniej wylacz aplikacje
-- znajdz liczbe elementow ktora maja w sobie litere a
+* znajdz liczbe elementow ktora maja w sobie litere a
 - wyswietl wszystkie elementy, ktore maja w sobie slowo kot
 - jesli wszystkie elementy maja taka sama dlugosc zwroc Tak, jesli nie zwroc Nie
 - wyswietl wartosc JAVA_HOME (niezaleznie od argumentow)

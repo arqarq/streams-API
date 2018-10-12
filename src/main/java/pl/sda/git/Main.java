@@ -18,6 +18,7 @@ public class Main {
         possibleActions.put("as-inv-string", new InvStringActionAS());
         possibleActions.put("as-replace-b", new ReplaceBtoAbcActionAS());
         possibleActions.put("as-show-time-date", new ShowTimeOrDateActionAS());
+        possibleActions.put("as-count-a", new ShowACountActionAS());
     }
 
     public static void main(String[] args) {
