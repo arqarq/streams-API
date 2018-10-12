@@ -19,6 +19,7 @@ public class Main {
         possibleActions.put("as-inv-string", new InvStringActionAS());
         possibleActions.put("as-length-yesno", new LengthYesNoActionAS());
         possibleActions.put("as-replace-b", new ReplaceBtoAbcActionAS());
+        possibleActions.put("as-show-javahome", new ShowJavaHomeActionAS());
         possibleActions.put("as-show-kot-only", new ShowKotActionAS());
         possibleActions.put("as-show-time-date", new ShowTimeOrDateActionAS());
     }

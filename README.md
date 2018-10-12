@@ -13,7 +13,7 @@
 * znajdz liczbe elementow ktora maja w sobie litere a
 * wyswietl wszystkie elementy, ktore maja w sobie slowo kot
 * jesli wszystkie elementy maja taka sama dlugosc zwroc Tak, jesli nie zwroc Nie
-- wyswietl wartosc JAVA_HOME (niezaleznie od argumentow)
+* wyswietl wartosc JAVA_HOME (niezaleznie od argumentow)
 - dodaj dlugosci wszystkich elementow
 - sprawdz ile elementow spelnia wyrazenie regularne: k+o+, podpowiedz: w wyrazie musi wystepowac conajmniej jedno k, a nastepnie conajmniej jedno o
 - jesli zostaly podane 3 elementy (zaloz, ze to liczby) stwórz z nich datę, jesli nie wypisz: nic z tym nie zrobie
