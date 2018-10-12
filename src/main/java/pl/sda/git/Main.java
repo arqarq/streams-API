@@ -13,12 +13,13 @@ public class Main {
         possibleActions.put("as-add-java", new AddJavaActionAS());
         possibleActions.put("as-add-num-args", new AddNumArgsActionAS());
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
+        possibleActions.put("as-count-a", new ShowACountActionAS());
         possibleActions.put("as-cut3", new Cut3ActionAS());
         possibleActions.put("as-exception", new ExceptionIf4ActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
         possibleActions.put("as-replace-b", new ReplaceBtoAbcActionAS());
+        possibleActions.put("as-show-kot-only", new ShowKotActionAS());
         possibleActions.put("as-show-time-date", new ShowTimeOrDateActionAS());
-        possibleActions.put("as-count-a", new ShowACountActionAS());
     }
 
     public static void main(String[] args) {
