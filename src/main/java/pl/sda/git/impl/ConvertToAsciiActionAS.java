@@ -4,7 +4,7 @@ import pl.sda.git.Action;
 
 import java.util.List;
 
-public class ConvToAsciiActionAS implements Action {
+public class ConvertToAsciiActionAS implements Action {
     public String doIt(List<String> strings) {
         String all = String.join(" ", strings); // z powrotem calosc w Stringu
         char[] allChars = all.toCharArray();

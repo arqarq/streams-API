@@ -15,7 +15,7 @@ public class Main {
         possibleActions.put("as-add-num-args", new AddNumArgsActionAS());
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
         possibleActions.put("as-check-ko", new CheckKOActionAS());
-        possibleActions.put("as-conv-ascii", new ConvToAsciiActionAS());
+        possibleActions.put("as-conv-ascii", new ConvertToAsciiActionAS());
         possibleActions.put("as-count-a", new ShowACountActionAS());
         possibleActions.put("as-cut3", new Cut3ActionAS());
         possibleActions.put("as-exception", new ExceptionIf4ActionAS());
@@ -43,7 +43,8 @@ public class Main {
         if (possibleActions.containsKey(actionName)) {
             System.out.println("What are the arguments?");
             final String argumentLine = scanner.nextLine();
-            final List<String> arguments = Arrays.asList(argumentLine.trim().split("\\s+")); // split po jednej lub wielu spacjach
+            String[] argsWithoutSpaces = argumentLine.trim().split("\\s+"); // split po jednej lub wielu spacjach
+            final List<String> arguments = Arrays.asList(argsWithoutSpaces);
 
             final Action action = possibleActions.get(actionName);
             final String result = action.doIt(arguments);
