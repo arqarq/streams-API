@@ -7,10 +7,9 @@ import java.util.stream.Collectors;
 
 public class AddJavaActionAS implements Action {
     public String doIt(List<String> strings) {
-        strings = strings.stream()
+        return strings.stream()
 //                .map(x -> new StringBuilder(x).append("java").toString())
                 .map(x -> x + "java")
-                .collect(Collectors.toList());
-        return String.join(" ", strings);
+                .collect(Collectors.joining(" "));
     }
 }
