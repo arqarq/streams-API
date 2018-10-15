@@ -5,7 +5,7 @@ import pl.sda.git.Action;
 import java.util.List;
 
 public class InvStringActionAS implements Action {
-    public String doIt(List<String> strings) {
-        return new StringBuilder(String.join("", strings)).reverse().toString();
+    public String doIt(List<String> actionInput) {
+        return new StringBuilder(String.join("", actionInput)).reverse().toString();
     }
 }

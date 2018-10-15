@@ -6,10 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ShowKotActionAS implements Action {
-    public String doIt(List<String> strings) {
-        List<String> ileKotow = strings.stream()
+    public String doIt(List<String> actionInput) {
+        return actionInput.stream()
                 .filter(x -> x.contains("kot"))
-                .collect(Collectors.toList());
-        return String.join(" ", ileKotow);
+                .collect(Collectors.joining(" "));
     }
 }

@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.stream.LongStream;
 
 public class AddIfTenActionAS implements Action {
-    public String doIt(List<String> strings) {
-        LongStream longStream = strings.stream()
+    public String doIt(List<String> actionInput) {
+        LongStream longStream = actionInput.stream()
                 .filter(x -> x.matches("-?\\d+"))
                 .mapToLong(Integer::valueOf);
-        if (strings.size() > 10) {
+        if (actionInput.size() > 10) {
             long result = longStream.sum();
             return String.valueOf(result);
         }

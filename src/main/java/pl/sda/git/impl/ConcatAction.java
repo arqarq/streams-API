@@ -6,7 +6,7 @@ import pl.sda.git.Action;
 import java.util.List;
 
 public class ConcatAction implements Action {
-    public String doIt(List<String> strings) {
-        return String.join("", strings);
+    public String doIt(List<String> actionInput) {
+        return String.join("", actionInput);
     }
 }

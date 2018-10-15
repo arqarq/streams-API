@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Cut3ActionAS implements Action {
-    public String doIt(List<String> strings) {
-        strings = strings.stream()
+    public String doIt(List<String> actionInput) {
+        actionInput = actionInput.stream()
                 .map(x -> {
                     try {
                         return x.substring(0, 3);
@@ -16,6 +16,6 @@ public class Cut3ActionAS implements Action {
                     }
                 })
                 .collect(Collectors.toList());
-        return String.join(" ", strings);
+        return String.join(" ", actionInput);
     }
 }

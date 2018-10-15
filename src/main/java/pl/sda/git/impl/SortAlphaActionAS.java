@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class SortAlphaActionAS implements Action {
-    public String doIt(List<String> strings) {
-        return strings.stream()
+    public String doIt(List<String> actionInput) {
+        return actionInput.stream()
                 .sorted()
                 .collect(Collectors.joining(" "));
     }
