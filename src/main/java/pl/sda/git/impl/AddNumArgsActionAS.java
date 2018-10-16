@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class AddNumArgsActionAS implements Action {
-    private final Pattern NUMBER_PATTERN = Pattern.compile("^[+-]?\\d+(\\.\\d+)*$");
+    private final Pattern NUMBER_PATTERN = Pattern.compile("^[+-]?\\d+(\\.\\d+)?$");
 
     public String doIt(List<String> actionInput) {
         List<String> temp = actionInput.stream()
