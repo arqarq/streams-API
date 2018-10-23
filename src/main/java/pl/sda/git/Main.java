@@ -10,7 +10,7 @@ public class Main {
     static {
         possibleActions.put("concat", new ConcatAction());
         possibleActions.put("as-add-all-lengths", new AddAllLengthsActionAS());
-        possibleActions.put("as-add-if-10", new AddIfTenActionAS());
+        possibleActions.put("as-add-if10", new AddIfTenActionAS());
         possibleActions.put("as-add-java", new AddJavaActionAS());
         possibleActions.put("as-add-num-args", new AddNumArgsActionAS());
         possibleActions.put("as-alpha-sort", new SortAlphaActionAS());
@@ -20,10 +20,10 @@ public class Main {
         possibleActions.put("as-cut3", new Cut3ActionAS());
         possibleActions.put("as-exception", new ExceptionIf4ActionAS());
         possibleActions.put("as-inv-string", new InvStringActionAS());
-        possibleActions.put("as-length-yesno", new LengthYesNoActionAS());
+        possibleActions.put("as-length-yes/no", new LengthYesNoActionAS());
         possibleActions.put("as-replace-b", new ReplaceBtoAbcActionAS());
         possibleActions.put("as-show-date-if3", new ShowDateIf3ActionAS());
-        possibleActions.put("as-show-date-time", new ShowTimeOrDateActionAS());
+        possibleActions.put("as-show-date/time", new ShowTimeOrDateActionAS());
         possibleActions.put("as-show-javahome", new ShowJavaHomeActionAS());
         possibleActions.put("as-show-kot-only", new ShowKotActionAS());
     }
