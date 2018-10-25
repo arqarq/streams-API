@@ -4,18 +4,18 @@ import pl.sda.git.Action;
 
 import java.util.List;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class AddNumArgsActionAS implements Action {
     private final Pattern NUMBER_PATTERN = Pattern.compile("^[+-]?\\d+(\\.\\d+)?$");
 
     public String doIt(List<String> actionInput) {
-        List<String> temp = actionInput.stream()
+//        List<String> temp
+        double sum = actionInput.stream()
 //                .map(x -> x.chars())
 //                .filter(x -> x.chars().allMatch(y -> (Character.isDigit(y))))
                 .filter(NUMBER_PATTERN.asPredicate()) //.filter(x -> x.matches("-?\\d+"))
 //                .peek(x -> System.out.print(x + " "))
-                .collect(Collectors.toList());
+                //.collect(Collectors.toList());
 //                .collect(Collectors.toList()); || y == '-'
 //                .map(Integer::valueOf)
 //                .collect(Collectors.summingInt(x -> x));
@@ -24,7 +24,7 @@ public class AddNumArgsActionAS implements Action {
 //        long sum = temp.stream()
 //                .mapToLong(Integer::valueOf)
 //                .sum();
-        double sum = temp.stream()
+                //double sum = temp.stream()
 //                .map(Double::valueOf)
                 .mapToDouble(Double::valueOf)
 //                .collect(Collectors.summingDouble(x -> x));

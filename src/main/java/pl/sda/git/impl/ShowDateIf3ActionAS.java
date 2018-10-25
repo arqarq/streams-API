@@ -20,11 +20,11 @@ public class ShowDateIf3ActionAS implements Action {
             LocalDate localDate;
             try {
                 localDate = LocalDate.parse(date, dateTimeFormatter);
+                dateTimeFormatter = DateTimeFormatter.ofPattern("d.MM.yyyy");
+                return localDate.format(dateTimeFormatter);
             } catch (DateTimeParseException ex) {
                 return "Nic z tym nie zrobię, bo niewłaściwe dane wej.";
             }
-            dateTimeFormatter = DateTimeFormatter.ofPattern("d.MM.yyyy");
-            return localDate.format(dateTimeFormatter);
         }
         return "Nic z tym nie zrobię.";
     }
